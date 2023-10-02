@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Tesla Model S",
+    "imageURL": "https://th.bing.com/th/id/OIP.9Uvaied6CY0y5h6lYeKNLQHaE8?pid=ImgDet&rs=1",
+    "seater": 5,
+    "fuelType": "Electric",
+    "mileage": "100 miles per gallon",
+    "transmission": "Automatic",
+    "modelYear": 2023,
+    "pricePerMonth": 1200
+  },
+  {
+    "id": 2,
+    "name": "Toyota Camry",
+    "imageURL": "https://th.bing.com/th/id/OIP.z1KcQ8rSNvadELQN53hx-AHaE8?pid=ImgDet&rs=1",
+    "seater": 5,
+    "fuelType": "Petrol",
+    "mileage": "35 miles per gallon",
+    "transmission": "Automatic",
+    "modelYear": 2023,
+    "pricePerMonth": 800
+  },
+  {
+    "id": 3,
+    "name": "Lexus Sedan",
+    "imageURL": "https://www.lexusindia.co.in/content/dam/lexus-v3-india/model-pages/ls/mlp/my23/gallery/lexus-mlp-ls-gallery-new-ext-07-d-1920x800.jpg",
+    "seater": 5,
+    "fuelType": "Petrol",
+    "mileage": "30 miles per gallon",
+    "transmission": "Automatic",
+    "modelYear": 2023,
+    "pricePerMonth": 750
+  },
+  {
+    "id": 4,
+    "name": "Ford Mustang",
+    "imageURL": "https://th.bing.com/th/id/R.b8fc0941ec88cf5a3b0ad4e20b4e5a3f?rik=UmhSIzIRL9PMCw&riu=http%3a%2f%2fcdn.carbuzz.com%2fgallery-images%2f1600%2f758000%2f900%2f758984.jpg&ehk=fhUg8ECEd8bdSgXVSBa6s4jcLsYbPing8WEtMG8MNxg%3d&risl=&pid=ImgRaw&r=0",
+    "seater": 4,
+    "fuelType": "Petrol",
+    "mileage": "25 miles per gallon",
+    "transmission": "Automatic",
+    "modelYear": 2023,
+    "pricePerMonth": 900
+  },
+  {
+    "id": 5,
+    "name": "BMW 3 Series",
+    "imageURL": "https://cdni.autocarindia.com/ExtraImages/20210114120710_BMW_320Ld_tracking.jpg",
+    "seater": 5,
+    "fuelType": "Petrol",
+    "mileage": "28 miles per gallon",
+    "transmission": "Automatic",
+    "modelYear": 2023,
+    "pricePerMonth": 1100
+  },
+  {
+    "id": 6,
+    "name": "McLaren 720S",
+    "imageURL": "https://i.ytimg.com/vi/yJDcx-oyWJE/maxresdefault.jpg",
+    "seater": 2,
+    "fuelType": "Petrol",
+    "mileage": "20 miles per gallon",
+    "transmission": "Manual",
+    "modelYear": 2023,
+    "pricePerMonth": 1400
+  },
+  {
+    "id": 7,
+    "name": "Audi A4",
+    "imageURL": "https://i0.wp.com/www.techdigest.tv/wp-content/uploads/2015/10/Audi-A4-white.jpg?ssl=1",
+    "seater": 5,
+    "fuelType": "Petrol",
+    "mileage": "30 miles per gallon",
+    "transmission": "Automatic",
+    "modelYear": 2023,
+    "pricePerMonth": 1000
+  },
+  {
+    "id": 8,
+    "name": "Nissan Altima",
+    "imageURL": "nissan-altima.jpg",
+    "seater": 5,
+    "fuelType": "Petrol",
+    "mileage": "32 miles per gallon",
+    "transmission": "Automatic",
+    "modelYear": 2023,
+    "pricePerMonth": 950
+  },
+  {
+    "id": 9,
+    "name": "Audi R8",
+    "imageURL": "mercedes-e-class.jpg",
+    "seater": 5,
+    "fuelType": "Petrol",
+    "mileage": "27 miles per gallon",
+    "transmission": "Automatic",
+    "modelYear": 2023,
+    "pricePerMonth": 1300
+  },
+  {
+    "id": 10,
+    "name": "Jeep Wrangler",
+    "imageURL": "jeep-wrangler.jpg",
+    "seater": 4,
+    "fuelType": "Petrol",
+    "mileage": "18 miles per gallon",
+    "transmission": "Manual",
+    "modelYear": 2023,
+    "pricePerMonth": 750
+  }
+]
