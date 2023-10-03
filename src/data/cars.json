@@ -112,7 +112,7 @@
   },
   {
     "id": 11,
-    "name": "Honda Civic",
+    "name": "Honda Civic Cruzer",
     "imageURL": "https://th.bing.com/th/id/OIP.pK1rT4TVhEcQacgwpKvMTQHaE8?pid=ImgDet&rs=1",
     "seater": 5,
     "fuelType": "Petrol",
@@ -179,7 +179,7 @@
   },
   {
     "id": 17,
-    "name": "Kia Sportage",
+    "name": "Kia Sportage XL",
     "imageURL": "https://www.carscoops.com/wp-content/uploads/2016/02/6203899f-2016-kiasportage-crdi-68.jpg",
     "seater": 5,
     "fuelType": "Petrol",
@@ -201,7 +201,7 @@
   },
   {
     "id": 19,
-    "name": "Acura MDX",
+    "name": "Acura MDX XS",
     "imageURL": "https://th.bing.com/th/id/OIP.oKVg73FkOftMAc2bgtIBwgHaE6?pid=ImgDet&rs=1",
     "seater": 7,
     "fuelType": "Petrol",
@@ -300,7 +300,7 @@
   },
   {
     "id": 28,
-    "name": "Kia Soul",
+    "name": "Kia Soul Minicar",
     "imageURL": "https://th.bing.com/th/id/OIP.3PS9KvTNzQP2OlXnMLYdtgHaE7?pid=ImgDet&rs=1",
     "seater": 5,
     "fuelType": "Petrol",
@@ -311,7 +311,7 @@
   },
   {
     "id": 29,
-    "name": "Ford Explorer",
+    "name": "Ford Explorer (SUV)",
     "imageURL": "https://s1.cdn.autoevolution.com/images/news/gallery/2020-ford-explorer-americas-best-selling-suv-reinvented_16.jpg",
     "seater": 7,
     "fuelType": "Petrol",
@@ -377,7 +377,7 @@
   },
   {
     "id": 35,
-    "name": "Hyundai Sonata",
+    "name": "Hyundai Seda",
     "imageURL": "https://s1.cdn.autoevolution.com/images/news/gallery/2018-sonata_22.jpg",
     "seater": 5,
     "fuelType": "Petrol",
@@ -474,17 +474,7 @@
     "modelYear": 2023,
     "pricePerMonth": 920
   },
-  {
-    "id": 45,
-    "name": "Subaru Forester",
-    "imageURL": "https://th.bing.com/th/id/OIP.BCSJvEGV6eennjUM8ATnRQHaE7?pid=ImgDet&rs=1",
-    "seater": 5,
-    "fuelType": "Petrol",
-    "mileage": "31 miles per gallon",
-    "transmission": "Automatic",
-    "modelYear": 2023,
-    "pricePerMonth": 890
-  },
+
   {
     "id": 46,
     "name": "Nissan Sentra",
@@ -508,6 +498,17 @@
     "pricePerMonth": 900
   },
   {
+    "id": 45,
+    "name": "Subaru Forester",
+    "imageURL": "https://th.bing.com/th/id/OIP.BCSJvEGV6eennjUM8ATnRQHaE7?pid=ImgDet&rs=1",
+    "seater": 5,
+    "fuelType": "Petrol",
+    "mileage": "31 miles per gallon",
+    "transmission": "Automatic",
+    "modelYear": 2023,
+    "pricePerMonth": 890
+  },
+  {
     "id": 48,
     "name": "Hyundai Kona",
     "imageURL": "https://example.com/hyundai-kona.jpg",
@@ -517,6 +518,18 @@
     "transmission": "Automatic",
     "modelYear": 2023,
     "pricePerMonth": 890
+  },
+  
+  {
+    "id": 50,
+    "name": "Ferrari 296 GTS",
+    "imageURL": "https://example.com/vw-tiguan.jpg",
+    "seater": 5,
+    "fuelType": "Petrol",
+    "mileage": "28 miles per gallon",
+    "transmission": "Automatic",
+    "modelYear": 2023,
+    "pricePerMonth": 920
   },
   {
     "id": 49,
@@ -528,17 +541,6 @@
     "transmission": "Automatic",
     "modelYear": 2023,
     "pricePerMonth": 870
-  },
-  {
-    "id": 50,
-    "name": "Ferrari 296 GTS",
-    "imageURL": "https://example.com/vw-tiguan.jpg",
-    "seater": 5,
-    "fuelType": "Petrol",
-    "mileage": "28 miles per gallon",
-    "transmission": "Automatic",
-    "modelYear": 2023,
-    "pricePerMonth": 920
   },
   {
     "id": 51,
@@ -553,15 +555,16 @@
   },
   {
     "id": 52,
-    "name": "Honda Accord",
-    "imageURL": "https://example.com/honda-accord.jpg",
+    "name": "Audi Q5",
+    "imageURL": "https://example.com/jeep-grand-cherokee.jpg",
     "seater": 5,
     "fuelType": "Petrol",
-    "mileage": "31 miles per gallon",
+    "mileage": "28 miles per gallon",
     "transmission": "Automatic",
     "modelYear": 2023,
-    "pricePerMonth": 920
+    "pricePerMonth": 950
   },
+  
   {
     "id": 53,
     "name": "Kia Sportage",
@@ -597,15 +600,16 @@
   },
   {
     "id": 56,
-    "name": "Audi Q5",
-    "imageURL": "https://example.com/jeep-grand-cherokee.jpg",
+    "name": "Honda Accord",
+    "imageURL": "https://example.com/honda-accord.jpg",
     "seater": 5,
     "fuelType": "Petrol",
-    "mileage": "28 miles per gallon",
+    "mileage": "31 miles per gallon",
     "transmission": "Automatic",
     "modelYear": 2023,
-    "pricePerMonth": 950
+    "pricePerMonth": 920
   },
+  
   {
     "id": 57,
     "name": "Hyundai Elantra",

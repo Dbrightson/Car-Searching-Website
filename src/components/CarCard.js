@@ -34,7 +34,8 @@ const CarCard = ({ car }) => {
 
   const iconStyle = {
     color: '#0026FF', // Icon color
-    marginRight: '4px', // Increase spacing
+    padding:'5px'
+  
   };
 
   const buttonStyle = {
@@ -44,6 +45,7 @@ const CarCard = ({ car }) => {
 
   const whiteTextStyle = {
     color: 'white', // Text color
+    fontSize:'12px'
   };
 
   const priceContainerStyle = {
@@ -59,7 +61,7 @@ const CarCard = ({ car }) => {
   };
   
   const slashStyle = {
-    fontSize: '13px', // Smaller font size for the slash
+    fontSize: '10px', // Smaller font size for the slash
     color: 'white', // White color for the slash
   };
   
@@ -67,15 +69,17 @@ const CarCard = ({ car }) => {
   const buttonContainerStyle = {
     display: 'flex',
     alignItems: 'center',
+    justifyContent:"end",
     marginLeft: '10px', // Adjust the spacing between buttons
   };
 
   const favoriteButtonStyle = {
-    width: '24px', // Make it smaller
-    height: '30px', // Make it smaller
-    fontSize: '14px', // Smaller icon size
-    padding: '0', // Remove padding to make it square
+    width: '20px', // Make it smaller
+    height: '20px', // Make it smaller
+    fontSize: '15px', // Smaller icon size
+    padding: '5px', // Remove padding to make it square
     background: isFavorite ? '#0026FF' : 'transparent',
+    borderRadius:"50%",
     color: isFavorite ? 'white' : '#0026FF',
     border: `1px solid ${isFavorite ? 'transparent' : '#0026FF'}`,
     marginRight: '4px', // Add a bit of space to the right
@@ -90,45 +94,45 @@ const CarCard = ({ car }) => {
       <CardMedia component="img" alt={name} height="160" image={imageURL} />
       <CardContent style={{ position: 'relative' }}>
         <div style={{ display: 'flex', alignItems: 'center', marginBottom: '8px' }}>
-          <Typography variant="h6" color="textPrimary"  paddingRight={5} fontWeight="bold" style={whiteTextStyle}>
+          <Typography variant="h6" color="textPrimary"  paddingRight={5} fontWeight="bold" style={{ color: 'white', }}>
             {name}
           </Typography>
-          <div style={{ marginLeft: '8px', display: 'flex', alignItems: 'center' }}>
+          <div style={{ marginLeft: '8px', display: 'flex', alignItems: 'center', justifyContent:'space-between' }}>
             <EventIcon fontSize="small" style={iconStyle} />
             <Typography variant="body2" color="textSecondary" style={whiteTextStyle}>
               {modelYear}
             </Typography>
           </div>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '8px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', width: '180px' }}>
+        <div style={{ display: 'flex', alignItems: 'start', marginBottom: '8px' }}>
+          <div style={{ display: 'flex', alignItems: 'center',  width: '200px' }}>
             <PeopleIcon fontSize="small" style={iconStyle} />
             <Typography variant="body2" color="textSecondary" style={whiteTextStyle}>
               {seater} seats
             </Typography>
           </div>
-          <div style={{ marginLeft: '100px', display: 'flex', alignItems: 'center', width: '180px' }}>
+          <div style={{  display: 'flex', alignItems: 'center', width: '160px', justifyContent:'start'  }}>
             <LocalGasStationIcon fontSize="small" style={iconStyle} />
             <Typography variant="body2" color="textSecondary" style={whiteTextStyle}>
               {fuelType}
             </Typography>
           </div>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-  <div style={{ display: 'flex', alignItems: 'center', width: '180px', marginRight: '20px' }}> {/* Adjusted width and added margin */}
-    <SpeedIcon fontSize="small" style={{ ...iconStyle, marginRight: '8px' }} /> {/* Adjusted margin */}
+        <div style={{ display: 'flex', alignItems: 'start' }}>
+  <div style={{ display: 'flex', alignItems: 'center', width: '200px',  }}> {/* Adjusted width and added margin */}
+    <SpeedIcon fontSize="small" style={iconStyle } /> {/* Adjusted margin */}
     <Typography variant="body2" color="textSecondary" style={whiteTextStyle}>
       {mileage}
     </Typography>
   </div>
-  <div style={{ display: 'flex', alignItems: 'center' }}>
+  <div style={{ display: 'flex', alignItems: 'center',justifyContent:'start' ,width: '160px'}}>
     <DriveEtaIcon fontSize="small" style={iconStyle} />
     <Typography variant="body2" color="textSecondary" style={whiteTextStyle}>
       {transmission}
     </Typography>
   </div>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'left', marginTop: '16px' }}>
+        <div style={{ display: 'flex', justifyContent: 'left', marginTop: '16px' ,justifyContent:'space-between'}}>
           <div style={priceContainerStyle}>
             <Typography variant="h6" fontWeight="bold" paddingRight={0.5} paddingBottom={0.7} style={priceValueStyle}>
               ${pricePerMonth}
@@ -138,13 +142,9 @@ const CarCard = ({ car }) => {
             </Typography>
           </div>
           <div style={buttonContainerStyle}>
-            <Button
-              className="btn"
-              onClick={handleFavoriteClick}
-              style={favoriteButtonStyle}
-            >
-              <FavoriteBorderIcon fontSize="small" />
-            </Button>
+           <FavoriteBorderIcon fontSize="small"               className="btn"
+              onClick={handleFavoriteClick} style={favoriteButtonStyle}/>
+   
             <Button
               variant="contained"
               style={{
