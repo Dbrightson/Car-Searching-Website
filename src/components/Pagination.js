@@ -1,5 +1,6 @@
 import React from 'react';
 import Pagination from '@mui/material/Pagination';
+import PaginationItem from '@mui/material/PaginationItem';
 import Typography from '@mui/material/Typography';
 
 const CustomPagination = ({ currentPage, totalCars, carsPerPage, onPageChange }) => {
@@ -12,10 +13,7 @@ const CustomPagination = ({ currentPage, totalCars, carsPerPage, onPageChange })
   };
 
   return (
-    <div className="mt-4 flex justify-center items-center">
-      <Typography variant="body2" color="textSecondary">
-        {currentPage} from {totalPages}
-      </Typography>
+    <div style={{ marginTop: '40px' }}> {/* Add margin to lower the pagination */}
       <Pagination
         color="primary"
         count={totalPages}
@@ -25,10 +23,16 @@ const CustomPagination = ({ currentPage, totalCars, carsPerPage, onPageChange })
         size="large"
         style={{
           backgroundColor: '#33374B',
-          '& .MuiPaginationItem-page.Mui-selected': {
-            backgroundColor: '#002BFF', // Change color for the selected page
-          },
         }}
+        renderItem={(item) => (
+          <PaginationItem {...item} style={{ color: 'white' }}>
+            {item.page ? (
+              <Typography variant="body2" color="textSecondary">
+                Page {currentPage} of {totalPages}
+              </Typography>
+            ) : null}
+          </PaginationItem>
+        )}
       />
     </div>
   );

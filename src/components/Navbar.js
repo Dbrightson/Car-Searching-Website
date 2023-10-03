@@ -21,7 +21,7 @@ const Navbar = ({ onSearch, onBrandFilter }) => {
 
   const handleBrandFilter = (brand) => {
     setSelectedBrand(brand);
-    onBrandFilter(brand);
+    onBrandFilter(brand); // Pass the selected brand to the parent component
     setAnchorEl(null);
   };
 
@@ -74,6 +74,11 @@ const Navbar = ({ onSearch, onBrandFilter }) => {
           >
             Filter by Brand
           </Button>
+
+          <Button color="inherit">
+            Relevance
+          </Button>
+
           <Menu
             id="brand-menu"
             anchorEl={anchorEl}
@@ -82,7 +87,8 @@ const Navbar = ({ onSearch, onBrandFilter }) => {
           >
             <MenuItem onClick={() => handleBrandFilter('All')}>All Brands</MenuItem>
             <MenuItem onClick={() => handleBrandFilter('Tesla')}>Tesla</MenuItem>
-            <MenuItem onClick={() => handleBrandFilter('Toyota')}>Toyota</MenuItem>
+            <MenuItem onClick={() => handleBrandFilter('BMW')}>BMW</MenuItem>
+            <MenuItem onClick={() => handleBrandFilter('Lexus')}>Lexus</MenuItem>
             {/* Add more brand options here */}
           </Menu>
         </div>
